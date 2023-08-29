@@ -1,7 +1,7 @@
-package mygoclient
+package main
 
 import (
-	mygoclient "k8sclient"
+	mygoclient "github.com/mscbalakrishnan/mygoclient/k8sclient"
 )
 
 func main() {
