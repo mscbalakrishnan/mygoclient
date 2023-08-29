@@ -1,4 +1,4 @@
-module github.com/bnainar/mygoclient
+module github.com/mscbalakrishnan/mygoclient
 
 go 1.20
 
