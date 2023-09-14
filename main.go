@@ -27,4 +27,19 @@ func main() {
 
 	fmt.Println("Md5 Sum: {}", mycrypto.GetMD5Hash("Balakrishnan"))
 
+	set := make(map[string]struct{})
+	set["one"] = struct{}{}
+	set["one"] = struct{}{}
+	set["two"] = struct{}{}
+	delete(set, "one")
+	fmt.Println("")
+	for _, str := range set {
+		fmt.Println(str)
+	}
+	_, exists := set["one"]
+	fmt.Println(exists)
+
+	str1 := mycrypto.EncodeToString("Balakrishnan is my name")
+	mycrypto.DecodeToString(str1)
+
 }
